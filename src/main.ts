@@ -10,11 +10,12 @@ async function bootstrap() {
   .setTitle('To do list')
   .setDescription('Projeto base utilizando NestJS, TypeORM e Swagger')
   .setContact(
-    'Gabriela',
-    'https://github.com/gabigheleno',
-    'gaby_heleno@hotmail.com'
+    "Gabriela",
+    "https://github.com/gabigheleno",
+    "gaby_heleno@hotmail.com"
   )
   .setVersion('1.0')
+  .addBearerAuth()
   .build()
 
   const document = SwaggerModule.createDocument(app, config)

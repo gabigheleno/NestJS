@@ -20,6 +20,6 @@ export class Categoria{
         onDelete: "CASCADE"
     })
     tarefas: Tarefa[]
-    @ApiProperty({type:() => Categoria})
-    categoria : Categoria
+    @ApiProperty()
+    tarefa : Tarefa[]
 }
