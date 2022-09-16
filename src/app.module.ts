@@ -27,8 +27,9 @@ import { TarefaModule } from './tarefa/modules/tarefa.modules';
       ssl: {
         rejectUnauthorized: false
       },
-      synchronize: true,
-      autoLoadEntities: true
+      autoLoadEntities: true,
+      synchronize: true
+      
     }),
     TarefaModule,
     CategoriaModule
