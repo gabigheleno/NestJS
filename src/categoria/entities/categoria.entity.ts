@@ -14,7 +14,7 @@ export class Categoria{
     @IsNotEmpty()
     @MaxLength(400)
     @Column({nullable: false, length: 400})
-    desricao: string
+    descricao: string
 
     @ManyToOne (() => Categoria, (categoria) => categoria.tarefas, {
         onDelete: "CASCADE"
